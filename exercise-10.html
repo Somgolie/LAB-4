@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang=""en>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <h1>THIS IS A SQUARE FUNCTION:</h1>
+    <input type="number"id="numberInput"placeholder="Enter your number"/>
+    <button onclick="enter()">ENTER</button>
+    <h2 id="output"></h2>
+
+<script>
+function square(number){
+    return number*number;
+}
+function enter(){
+    let input= document.getElementById("numberInput").value;
+    let answer= square(input);
+    document.getElementById("output").textContent="The square of "+input+" is "+answer;
+}
+
+</script>
+
+  </body>
+</html>
